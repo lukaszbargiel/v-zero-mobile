@@ -1,10 +1,15 @@
 
-## React Native Seed v1.0.0
+## VZeroMobile boilerplate based on React Native Seed (http://reactnativeseed.com)
 
-### A [React Native](https://facebook.github.io/react-native/docs/getting-started.html) Starter Kit with [NativeBase](https://nativebase.io/) + [React Navigation](https://reactnavigation.org/) + [Redux](https://github.com/reactjs/redux) Apps (iOS & Android)
-
-*Brought to you by [GeekyAnts](https://geekyants.com/)*
-
+### Main Components:
+### * [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
+### * [NativeBase](https://nativebase.io/) 
+### * [React Navigation](https://reactnavigation.org/) 
+### * [Redux](https://github.com/reactjs/redux) 
+### * [Redux Form] (https://redux-form.com/7.4.2/)
+### * [API Sauce] https://github.com/infinitered/apisauce#readme
+### * TypeScript
+### * Feature First approach
 
 ## Get Started
 
@@ -14,6 +19,7 @@
 
 * Globally installed [react-native CLI](https://facebook.github.io/react-native/docs/getting-started.html)
 
+* Globally installed [copyfiles](https://www.npmjs.com/package/copyfiles)
 
 ### 2. Installation
 
@@ -47,4 +53,5 @@ $ npm install
 
 
 For apps with more advance designs, please visit **[NativeBase Market](https://market.nativebase.io/)**.
+
 # v-zero-mobile

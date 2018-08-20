@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeSeed",
+  "name": "VZeroMobile",
   "version": "1.1.0",
   "private": true,
   "devDependencies": {
@@ -25,6 +25,7 @@
   "main": "node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
     "start": "npm run build && concurrently -r \"npm run watch\" \"react-native-scripts start\"",
+    "add-assets": "copyfiles -u 1 \"src/**/!(*.js|*.jsx|*.map|*.ts|*.tsx)\" artifacts/",
     "eject": "react-native-scripts eject",
     "test": "yarn jest && tslint src/**/*.ts && eslint .",
     "watch": "npm run build -- -w",
@@ -32,7 +33,7 @@
     "android": "npm run build && concurrently -r 'npm run watch' 'react-native-scripts android'",
     "tsc": "tsc",
     "clean": "rimraf artifacts",
-    "build": "npm run clean && npm run tsc --",
+    "build": "npm run clean && npm run tsc --  && npm run add-assets",
     "lint": "tslint src/**/*.ts",
     "jest": "node node_modules/jest/bin/jest.js",
     "precommit": "yarn test"
@@ -54,6 +55,7 @@
     ]
   },
   "dependencies": {
+    "apisauce": "^0.16.0",
     "expo": "^27.0.2",
     "jest": "^22.4.4",
     "lodash": "4.17.4",
